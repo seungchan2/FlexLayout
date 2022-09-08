@@ -20,6 +20,9 @@
 		EC8A56F528C87B71009010C4 /* FlexLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A56F428C87B71009010C4 /* FlexLayoutViewModel.swift */; };
 		EC8A56F828C87B99009010C4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EC8A56F728C87B99009010C4 /* RxCocoa */; };
 		EC8A56FA28C87B99009010C4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8A56F928C87B99009010C4 /* RxSwift */; };
+		EC8A56FE28C9C0B7009010C4 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = EC8A56FD28C9C0B7009010C4 /* RxMoya */; };
+		EC8A570028C9C1C8009010C4 /* FlexLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A56FF28C9C1C8009010C4 /* FlexLayoutTableViewCell.swift */; };
+		EC8A570328C9C3A4009010C4 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = EC8A570228C9C3A4009010C4 /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,7 @@
 		EC8A56F028C7BC5E009010C4 /* FlexLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutViewController.swift; sourceTree = "<group>"; };
 		EC8A56F228C87AE1009010C4 /* FlexLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutView.swift; sourceTree = "<group>"; };
 		EC8A56F428C87B71009010C4 /* FlexLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutViewModel.swift; sourceTree = "<group>"; };
+		EC8A56FF28C9C1C8009010C4 /* FlexLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +47,9 @@
 				EC8A56E228C7BAC7009010C4 /* Then in Frameworks */,
 				EC8A56E528C7BADA009010C4 /* FlexLayout in Frameworks */,
 				EC8A56F828C87B99009010C4 /* RxCocoa in Frameworks */,
+				EC8A56FE28C9C0B7009010C4 /* RxMoya in Frameworks */,
 				EC8A56E928C7BADA009010C4 /* FlexLayoutYogaKit in Frameworks */,
+				EC8A570328C9C3A4009010C4 /* PinLayout in Frameworks */,
 				EC8A56E728C7BADA009010C4 /* FlexLayoutYoga in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +81,10 @@
 				EC8A56D528C7BAB0009010C4 /* Assets.xcassets */,
 				EC8A56D728C7BAB0009010C4 /* LaunchScreen.storyboard */,
 				EC8A56DA28C7BAB0009010C4 /* Info.plist */,
-				EC8A56F428C87B71009010C4 /* FlexLayoutViewModel.swift */,
 				EC8A56F028C7BC5E009010C4 /* FlexLayoutViewController.swift */,
+				EC8A56F428C87B71009010C4 /* FlexLayoutViewModel.swift */,
 				EC8A56F228C87AE1009010C4 /* FlexLayoutView.swift */,
+				EC8A56FF28C9C1C8009010C4 /* FlexLayoutTableViewCell.swift */,
 			);
 			path = FlexLayout_Test;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 				EC8A56E828C7BADA009010C4 /* FlexLayoutYogaKit */,
 				EC8A56F728C87B99009010C4 /* RxCocoa */,
 				EC8A56F928C87B99009010C4 /* RxSwift */,
+				EC8A56FD28C9C0B7009010C4 /* RxMoya */,
+				EC8A570228C9C3A4009010C4 /* PinLayout */,
 			);
 			productName = FlexLayout_Test;
 			productReference = EC8A56C928C7BAAF009010C4 /* FlexLayout_Test.app */;
@@ -138,6 +147,8 @@
 				EC8A56E028C7BAC7009010C4 /* XCRemoteSwiftPackageReference "Then" */,
 				EC8A56E328C7BADA009010C4 /* XCRemoteSwiftPackageReference "FlexLayout" */,
 				EC8A56F628C87B99009010C4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				EC8A56FC28C9C0B7009010C4 /* XCRemoteSwiftPackageReference "Moya" */,
+				EC8A570128C9C3A4009010C4 /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = EC8A56CA28C7BAAF009010C4 /* Products */;
 			projectDirPath = "";
@@ -169,6 +180,7 @@
 				EC8A56F128C7BC5E009010C4 /* FlexLayoutViewController.swift in Sources */,
 				EC8A56F528C87B71009010C4 /* FlexLayoutViewModel.swift in Sources */,
 				EC8A56CF28C7BAAF009010C4 /* SceneDelegate.swift in Sources */,
+				EC8A570028C9C1C8009010C4 /* FlexLayoutTableViewCell.swift in Sources */,
 				EC8A56F328C87AE1009010C4 /* FlexLayoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +415,22 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		EC8A56FC28C9C0B7009010C4 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EC8A570128C9C3A4009010C4 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -435,6 +463,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC8A56F628C87B99009010C4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		EC8A56FD28C9C0B7009010C4 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8A56FC28C9C0B7009010C4 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		EC8A570228C9C3A4009010C4 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8A570128C9C3A4009010C4 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
