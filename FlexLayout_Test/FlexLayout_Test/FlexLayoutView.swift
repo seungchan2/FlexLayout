@@ -16,14 +16,11 @@ final class FlexLayoutView: UIView {
     lazy var rootFlexContainer = UIView().then {
         $0.backgroundColor = .blue
     }
-    
-    lazy var label = UILabel().then {
-        $0.text = "1111111"
-    }
-    
+
     lazy var tableView = UITableView().then {
         $0.backgroundColor = .red
         $0.register(FlexLayoutTableViewCell.self, forCellReuseIdentifier: "FlexLayoutTableViewCell")
+        $0.rowHeight = 100
     }
     
     override init(frame: CGRect) {
@@ -43,18 +40,16 @@ final class FlexLayoutView: UIView {
     }
     
     func setupView() {
-        [rootFlexContainer, tableView]
-            .forEach {
-                addSubview($0)
-            }
+        addSubview(rootFlexContainer)
         
         rootFlexContainer.flex.define {
-            $0.addItem(label)
+            $0.addItem(tableView).width(UIScreen.main.bounds.width).height(UIScreen.main.bounds.height)
         }
     }
     
     func setupConstraints() {
-        self.rootFlexContainer.flex.layout()
+        // 순서 체크
         self.rootFlexContainer.pin.all()
+        self.rootFlexContainer.flex.layout()
     }
 }

@@ -24,16 +24,7 @@ final class FlexLayoutViewController: UIViewController {
         assignDelegation()
       
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        
-        
-        
-        
-    }
-    
+
     private func style() {
         view.backgroundColor = .white
     }
